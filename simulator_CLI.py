@@ -9,9 +9,11 @@
 
 import threading
 from time import sleep
+from queue import Queue
 from modules.frame import initialize_frame_table, display_frame_table
 from modules.process import Process
 from modules import frame
+from gui import SimulatorGUI  # Import the GUI class
    
 
 
