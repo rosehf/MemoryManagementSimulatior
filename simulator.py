@@ -1,7 +1,7 @@
-"""
-Memory Management Simulator with Dynamic Process Creation/Deletion
-CIS-302 OS Project - Final Version (Claude)
-"""
+# Memory Management Simulator with Dynamic Process Creation/Deletion
+# CIS-302 OS Project - Final Version (Claude)
+# HR: Claude generated dynamic simulator based off of cadet written static version, copilot code suggestions
+
 
 import tkinter as tk
 from tkinter import ttk, messagebox
