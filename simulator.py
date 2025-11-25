@@ -1,6 +1,6 @@
 """
 Memory Management Simulator with Dynamic Process Creation/Deletion
-CIS-302 OS Project - Final Version
+CIS-302 OS Project - Final Version (Claude)
 """
 
 import tkinter as tk
@@ -236,9 +236,11 @@ class MemorySimulatorGUI:
         
         # Delete all processes
         with process_lock:
+            # Copy the list of PIDs to avoid modification during iteration
             pids_to_delete = list(active_processes.keys())
-            for pid in pids_to_delete:
-                self.delete_process(pid)
+            
+            # Clear the active processes dict first to stop simulation threads
+            active_processes.clear()
             
             # Reset frame table
             for frame_obj in frame_module.FrameTable:
