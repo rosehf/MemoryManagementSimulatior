@@ -5,10 +5,16 @@
 import threading
 from time import sleep
 from queue import Queue
+import sys
+from pathlib import Path
+
+# Add parent directory to path to import modules
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+
 from modules.frame import initialize_frame_table, display_frame_table
 from modules import frame
 from modules.process import Process
-from gui import SimulatorGUI  # Import the GUI class
+from static.gui.gui import SimulatorGUI  # Import the GUI class
 
 # Global variables
 simulation_running = True
